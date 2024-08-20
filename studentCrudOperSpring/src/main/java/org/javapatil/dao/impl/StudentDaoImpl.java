@@ -42,5 +42,12 @@ public class StudentDaoImpl  implements StudentDao{
 		String query="Update student set sname='"+studentForm.getSname()+"', age="+studentForm.getAge()+" where sno="+studentForm.getSno();
 		jdbcTemplate.update(query);
 	}
+	
+	@Override
+	public void deleteStud(int sno) {
+		String query="Delete from student where sno="+sno;
+		jdbcTemplate.update(query);
+		
+	}
 
 }

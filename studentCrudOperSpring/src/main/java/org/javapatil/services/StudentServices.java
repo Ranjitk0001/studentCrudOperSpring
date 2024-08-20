@@ -12,4 +12,6 @@ public interface StudentServices {
  StudentForm getStudBySnoService(int sno);
  
  void updateStudServices(StudentForm studentForm);
+ 
+ void deleteStudServices(int sno);
 }

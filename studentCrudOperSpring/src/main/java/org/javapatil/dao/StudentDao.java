@@ -12,4 +12,6 @@ public interface StudentDao {
   StudentForm getStudBySno(int sno);
   
   void updateStud(StudentForm studentForm);
+  
+  void deleteStud(int sno);
 }

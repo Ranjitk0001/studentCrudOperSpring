@@ -39,4 +39,10 @@ public void updateStudServices(StudentForm studentForm) {
 	
 }
 
+@Override
+public void deleteStudServices(int sno) {
+	studentDao.deleteStud(sno);
+	
+}
+
 }

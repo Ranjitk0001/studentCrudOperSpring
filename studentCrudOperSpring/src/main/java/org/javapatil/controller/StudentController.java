@@ -6,6 +6,7 @@ import org.javapatil.model.StudentForm;
 import org.javapatil.services.StudentServices;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,5 +46,11 @@ public class StudentController {
 	@PutMapping
 	public void updateStudCtrl(@RequestBody StudentForm studentForm) {
 		studentServices.updateStudServices(studentForm);
+	}
+	
+	
+	@DeleteMapping("/{snum}")
+	public void deleteStudCtrl(@PathVariable(value = "snum") int sno) {
+		studentServices.deleteStudServices(sno);
 	}
 }
