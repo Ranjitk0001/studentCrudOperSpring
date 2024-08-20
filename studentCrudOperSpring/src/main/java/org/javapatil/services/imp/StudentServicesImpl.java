@@ -26,4 +26,10 @@ public void insertStudServices(StudentForm studentForm) {
 	
 }
  
+
+@Override
+public StudentForm getStudBySnoService(int sno) {
+     StudentForm studentForm=studentDao.getStudBySno(sno);
+	return studentForm;
+}
 }
