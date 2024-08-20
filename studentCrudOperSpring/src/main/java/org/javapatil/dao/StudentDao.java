@@ -10,4 +10,6 @@ public interface StudentDao {
   void insertStud(StudentForm studentForm);
   
   StudentForm getStudBySno(int sno);
+  
+  void updateStud(StudentForm studentForm);
 }

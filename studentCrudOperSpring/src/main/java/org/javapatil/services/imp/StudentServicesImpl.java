@@ -32,4 +32,11 @@ public StudentForm getStudBySnoService(int sno) {
      StudentForm studentForm=studentDao.getStudBySno(sno);
 	return studentForm;
 }
+
+@Override
+public void updateStudServices(StudentForm studentForm) {
+	studentDao.updateStud(studentForm);
+	
+}
+
 }

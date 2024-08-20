@@ -35,5 +35,12 @@ public class StudentDaoImpl  implements StudentDao{
 		StudentForm studentForm=jdbcTemplate.query("select * from student where sno="+sno, studentBySnoExtrator::extractData);
 		return studentForm;
 	}
+	
+	@Override
+	public void updateStud(StudentForm studentForm) {
+		
+		String query="Update student set sname='"+studentForm.getSname()+"', age="+studentForm.getAge()+" where sno="+studentForm.getSno();
+		jdbcTemplate.update(query);
+	}
 
 }

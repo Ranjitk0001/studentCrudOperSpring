@@ -10,4 +10,6 @@ public interface StudentServices {
  void insertStudServices(StudentForm studentForm);
  
  StudentForm getStudBySnoService(int sno);
+ 
+ void updateStudServices(StudentForm studentForm);
 }
