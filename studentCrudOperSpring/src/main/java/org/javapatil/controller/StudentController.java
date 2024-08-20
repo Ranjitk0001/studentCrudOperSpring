@@ -14,8 +14,9 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping(value = "studentlist")
-
+@RequestMapping(value = "students")
+//Connect to Angular
+@CrossOrigin("*")
 public class StudentController {
 	private StudentServices studentServices;
 
