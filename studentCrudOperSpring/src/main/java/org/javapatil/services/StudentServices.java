@@ -6,4 +6,5 @@ import org.javapatil.model.StudentForm;
 
 public interface StudentServices {
  List<StudentForm> getStudListService();
+ void insertStudServices(StudentForm studentForm);
 }

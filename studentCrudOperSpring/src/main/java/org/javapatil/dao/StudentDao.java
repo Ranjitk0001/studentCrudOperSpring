@@ -6,4 +6,5 @@ import org.javapatil.model.StudentForm;
 
 public interface StudentDao {
   List<StudentForm> getStudList();
+  void insertStud(StudentForm studentForm);
 }

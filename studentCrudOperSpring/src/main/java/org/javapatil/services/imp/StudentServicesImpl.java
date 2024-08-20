@@ -19,6 +19,11 @@ public List<StudentForm> getStudListService() {
 	List<StudentForm> studList=studentDao.getStudList();
 	return studList;
 }
- 
+
+@Override
+public void insertStudServices(StudentForm studentForm) {
+        studentDao.insertStud(studentForm);
+	
+}
  
 }

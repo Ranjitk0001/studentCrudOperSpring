@@ -20,6 +20,11 @@ public class StudentDaoImpl  implements StudentDao{
 		List<StudentForm> studList=jdbcTemplate.query("select * from student", studentListExtrator::extractData);
 		return studList;
 	}
-	
+	@Override
+	public void insertStud(StudentForm studentForm) {
+		String query="Insert into student values("+studentForm.getSno()+",'"+studentForm.getSname()+"',"+studentForm.getAge()+")";
+		jdbcTemplate.update(query);
+		
+	}
 
 }
